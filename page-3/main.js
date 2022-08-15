@@ -71,12 +71,14 @@ document.getElementById("search").onclick= (event) => {
     event.target.nextElementSibling.style.display="none";
     event.target.closest(".header").lastElementChild.style.display="flex";
     document.getElementById("search-box-parent").style.display="block";
-    let inputValue=document.getElementById("search-input").value;
-    document.querySelectorAll(".task").forEach(function(element) {
-        let text=element.firstElementChild.lastElementChild.firstElementChild.innerText;
-        if (inputValue===text) {
-            document.getElementById("search-box").append(element);
-        }
+    setInterval(function() {
+        let inputValue=document.getElementById("search-input").value;
+        document.querySelectorAll(".task").forEach(function(element) {
+            let text=element.firstElementChild.lastElementChild.firstElementChild.innerText;
+            if (inputValue===text) {
+                document.getElementById("search-box").append(element);
+            }
+        })
     })
 }
 document.getElementById("multiply").onclick = (event) => {
