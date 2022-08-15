@@ -70,18 +70,18 @@ document.querySelectorAll("img").forEach(function(element) {
 document.getElementById("search").onclick= (event) => {
     event.target.nextElementSibling.style.display="none";
     event.target.closest(".header").lastElementChild.style.display="flex";
-    // document.getElementById("search-box").style.display="block";
-    // setInterval(function() {
-    //     let value=document.getElementById("search-input").value;
-    //     tasks.forEach(function(element) {
-    //         if(value===element.text) {
-    //             let task=document.getElementById(`${element.taskNumber}`).cloneNode(deep);
-    //             document.getElementById("search-box").append(task);
-    //         }
-    //     })
-    // },100)
+    document.getElementById("search-box-parent").style.display="block";
+    let inputValue=document.getElementById("search-input").value;
+    document.querySelectorAll(".task").forEach(function(element) {
+        let text=element.firstElementChild.lastElementChild.firstElementChild.innerText;
+        if (inputValue===text) {
+            document.getElementById("search-box").append(element);
+        }
+    })
 }
 document.getElementById("multiply").onclick = (event) => {
+    window.location.reload();
+    document.getElementById("search-input").value="";
     event.target.closest(".input-box").style.display="";
     document.getElementById("angle").style.display="inline-block";
     document.getElementById("search-box").style.display="";
