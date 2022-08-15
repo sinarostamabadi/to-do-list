@@ -137,3 +137,6 @@ body {
     border-bottom: 1px solid rgb(225, 225, 225) !important;
     position: relative;
 }
+a {
+    color: black;
+}
