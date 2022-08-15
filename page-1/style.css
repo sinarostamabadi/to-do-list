@@ -179,6 +179,8 @@ a:visited {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
+    text-transform: capitalize;
 }
 .task:hover {
     background-color: #00abfd;
@@ -188,4 +190,30 @@ a:visited {
 }
 .task-box:hover .bullet {
     background-color: white;
+}
+.done {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    text-transform: capitalize;
+    color: white;
+}
+.done-task {
+    position: absolute;
+    width: 270px;
+    height: 60px;
+    border-radius: 7px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    top: 32px;
+    left: 50px;
+    background-color: #00abfd;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: white;
 }

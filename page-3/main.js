@@ -53,9 +53,10 @@ let editBarOnclick=(event) => {
         event.target.closest(".right").style.display="none";
     }
     trashBox.onclick = () => {
-        let taskId=trashBox.closest(".task").getAttribute("id");
+        let taskText=trashBox.closest(".task").firstElementChild.lastElementChild.firstElementChild.innerText;
+        console.log(taskText)
         tasks.forEach(function(element,index) {
-            if (+taskId === element.taskNumber) {
+            if (element.text===taskText) {
                 tasks.splice(index,1)
             }
         })
@@ -69,8 +70,19 @@ document.querySelectorAll("img").forEach(function(element) {
 document.getElementById("search").onclick= (event) => {
     event.target.nextElementSibling.style.display="none";
     event.target.closest(".header").lastElementChild.style.display="flex";
+    // document.getElementById("search-box").style.display="block";
+    // setInterval(function() {
+    //     let value=document.getElementById("search-input").value;
+    //     tasks.forEach(function(element) {
+    //         if(value===element.text) {
+    //             let task=document.getElementById(`${element.taskNumber}`).cloneNode(deep);
+    //             document.getElementById("search-box").append(task);
+    //         }
+    //     })
+    // },100)
 }
 document.getElementById("multiply").onclick = (event) => {
     event.target.closest(".input-box").style.display="";
-    document.getElementById("angle").style.display="";
+    document.getElementById("angle").style.display="inline-block";
+    document.getElementById("search-box").style.display="";
 }

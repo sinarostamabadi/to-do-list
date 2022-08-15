@@ -118,6 +118,7 @@ textarea {
     padding-top: 10px;
     font-size: 22px;
     height: 150px;
+    font-family: 'Roboto', sans-serif;
 }
 textarea::placeholder {
     font-size: 22px;

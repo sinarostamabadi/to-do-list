@@ -7,11 +7,10 @@ let allTypes=document.getElementById("allType").children;
         }
     }
     document.getElementById("create-task").onclick = (event) => {
+        let counter=0;
     let text=document.getElementById("task-name").value;
     let textTitle=document.getElementById("description").value;
     let timeStart=document.getElementById("time").value;
-    let taskNumber=tasks.length;
-    console.log(taskNumber);
     function createTask(text,textTitle,type,timeStart) {
         this.text=text;
         this.textTitle=textTitle;
@@ -21,8 +20,10 @@ let allTypes=document.getElementById("allType").children;
             return time / 30 ;
         };
         this.timeStart=timeStart;
-        this.taskNumber=taskNumber;
+        taskNumber=counter;
+        this.done=" ";
     }
+    counter++;
     tasks.push(new createTask(text , textTitle , type , timeStart))
     localStorage.setItem("tasks",JSON.stringify(tasks));
     console.log(JSON.parse(window.localStorage.tasks))
