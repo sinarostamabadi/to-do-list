@@ -1,1 +1,172 @@
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 65px 15px 65px 35px;
+}
+.angle {
+    width: 100%;
+    text-align: left;
+}
+.angle i {
+    color: rgb(36, 36, 36);
+    font-size: 27px;
+}
+.task-name {
+    width: 100%;
+}
+.task-name input {
+    width: 100%;
+    height: 65px;
+    border: none;
+    outline: none;
+    font-size: 29px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-top: 15px;
+}
+.task-name input::placeholder {
+    font-size: 27px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(141, 141, 141);
+}
+.bottom-box {
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+label , .label {
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: rgb(100, 100, 100);
+}
+.choose-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+select {
+    width: 170px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: rgb(36, 36, 36);
+}
+.task-type {
+    width: 100%;
+    margin-top: 5px;
+}
+.type-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 1fr;
+    grid-template-rows: 35px 35px;
+    justify-content: start;
+    gap: 7px;
+    margin-top: 10px;
+}
+.types {
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    border-radius: 6px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+}
+.work {
+    background-color: #00abfd;
+}
+.personal {
+    background-color: #00beca;
+}
+.shopping {
+    background-color: #e337f9;
+}
+.health {
+    background-color: #ff0064;
+    width: 110%;
+}
+.other {
+    background-color: #8e37f6;
+    width: 80%;
+    justify-self: center;
+}
+.description {
+    margin-top: 25px;
+}
+textarea {
+    border: none;
+    outline: none;
+    padding-top: 10px;
+    font-size: 22px;
+    height: 150px;
+}
+textarea::placeholder {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: rgb(135, 135, 135);
+}
+.create {
+    height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #ff0064;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.reset {
+    height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #00abfd;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.task-created {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 35px;
+    display: none;
+}

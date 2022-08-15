@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div class="angle">
+        <a href="#" id="angle" name="angle"><i class="fa-solid fa-angle-left"></i></a>
+    </div>
+    <div class="task-name">
+        <input type="text" name="" id="task-name" placeholder="add task" required>
+    </div>
+    <div class="bottom-box">
+        <div class="choose-box">
+            <div class="date-input">
+            <label for="date">choose date</label>
+            <select name="date" id="date">
+                <option value="">22 jul 2022</option>
+            </select>
+        </div>
+        <div class="time-input">
+            <label for="time">choose time</label>
+            <select name="time" id="time">
+                <option value="8">08:00 - 09:00</option>
+                <option value="9">09:00 - 10:00</option>
+                <option value="10">10:00 - 11:00</option>
+                <option value="11" selected>11:00- 12:00</option>
+                <option value="12">12:00 - 13:00</option>
+            </select>
+        </div>
+        </div>
+        <div class="task-type">
+            <p class="label">choose task type</p>
+            <div class="type-grid" id="allType">
+            <div class="types work" id="work">work</div>
+            <div class="types personal">personal</div>
+            <div class="types shopping">shopping</div>
+            <div class="types health">health</div>
+            <div class="types other">other</div>
+        </div>
+        </div>
+        <div class="description">
+            <label for="description">write description</label>
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="description..."></textarea>
+        </div>
+        <button id="create-task" class="create" form="create-task-form">create task</button>
+        <div class="task-created" id="task-created">
+            task created
+        </div>
+    </div>
+    <script src="./main.js">
 
+    </script>
+</body>
+</html>

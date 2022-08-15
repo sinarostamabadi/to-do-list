@@ -1,1 +1,139 @@
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    /* padding: 60px 0px 0px 40px; */
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25px;
+    padding: 60px 25px 0px 40px;
+}
+.header i {
+    font-size: 27px;
+}
+.task-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.bullet {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    align-self: flex-start;
+    margin: 15px 10px;
+}
+.task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    /* align-items: center; */
+    /* padding: 15px 10px 15px 40px; */
+    border-bottom: 1px solid rgb(225, 225, 225);
+    position: relative;
+}
+.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 10px 15px 40px;
+}
+.left img {
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+}
+.inner-left {
+    margin-left: 35px;
+}
+.title {
+    font-weight: 500;
+    color: rgb(38, 38, 38);
+}
+.text {
+    font-size: 14px;
+    color: rgb(136, 136, 136);
+    margin-top: 2px;
+}
+.trash {
+    height: 100%;
+    width: 70px;
+    background-color: #ff0064;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+#input-box {
+    width: 100%;
+    margin-right: 10px;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+}
+.search-input {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15px;
+    color: rgb(136, 136, 136);
+    outline: none;
+}
+.work {
+    background-color: #00abfd;
+}
+.personal {
+    background-color: #00beca;
+}
+.shopping {
+    background-color: #e337f9;
+}
+.health {
+    background-color: #ff0064;
+}
+.other {
+    background-color: #8e37f6;
+}
+.cancel {
+    height: 100%;
+    width: 70px;
+    background-color: #77bdff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 70px;
+}
+.default-task {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    background-color: white !important;
+    /* align-items: center; */
+    /* padding: 15px 10px 15px 40px; */
+    border-bottom: 1px solid rgb(225, 225, 225) !important;
+    position: relative;
+}

@@ -41,6 +41,14 @@ header {
     padding: 10px 14px;
     background-color: #ff0064;
     border-radius: 4px;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    color: white;
 }
 .bottom-header {
     display: flex;
@@ -87,24 +95,28 @@ header {
     height: 7px;
     background-color: rgb(88, 174, 255);
     border-radius: 50%;
+    align-self: flex-start;
 }
 .personal-bullet {
     width: 7px;
     height: 7px;
     background-color: rgb(88, 174, 255);
     border-radius: 50%;
+    align-self: flex-start;
 }
 .shopping-bullet , .bullet {
     width: 7px;
     height: 7px;
     background-color: purple;
     border-radius: 50%;
+    align-self: flex-start;
 }
 .health-bullet {
     width: 7px;
     height: 7px;
     background-color: pink;
     border-radius: 50%;
+    align-self: flex-start;
 }
 .bottom-section {
     width: 100%;
@@ -131,27 +143,28 @@ header {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    margin-top: 25px;
+    margin-top: 43px;
 }
 .line {
     width: 100%;
     height: 1px;
     background-color: rgb(225, 225, 225);
 }
-.task-1 {
+.task {
     position: absolute;
     width: 270px;
     height: 60px;
     border-radius: 7px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    top: 85px;
+    top: 32px;
     left: 50px;
     background-color: white;
     padding: 10px 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.task-box:hover {
+.task:hover {
     background-color: #00abfd;
 }
 .task-box:hover * {
@@ -159,17 +172,4 @@ header {
 }
 .task-box:hover .bullet {
     background-color: white;
-}
-.task-2 {
-    position: absolute;
-    width: 270px;
-    height: 60px;
-    border-radius: 7px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    top: 180px;
-    left: 50px;
-    background-color: white;
-    padding: 10px 10px;
-    display: flex;
-    justify-content: space-between;
 }
