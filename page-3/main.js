@@ -54,7 +54,11 @@ let editBarOnclick=(event) => {
     }
     trashBox.onclick = () => {
         let taskId=trashBox.closest(".task").getAttribute("id");
-        tasks.splice(+taskId,1);
+        tasks.forEach(function(element,index) {
+            if (+taskId === element.taskNumber) {
+                tasks.splice(index,1)
+            }
+        })
         window.localStorage.setItem("tasks",JSON.stringify(tasks));
         trashBox.closest(".task").remove();
     }

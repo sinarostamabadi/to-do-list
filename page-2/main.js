@@ -10,6 +10,8 @@ let allTypes=document.getElementById("allType").children;
     let text=document.getElementById("task-name").value;
     let textTitle=document.getElementById("description").value;
     let timeStart=document.getElementById("time").value;
+    let taskNumber=tasks.length;
+    console.log(taskNumber);
     function createTask(text,textTitle,type,timeStart) {
         this.text=text;
         this.textTitle=textTitle;
@@ -19,6 +21,7 @@ let allTypes=document.getElementById("allType").children;
             return time / 30 ;
         };
         this.timeStart=timeStart;
+        this.taskNumber=taskNumber;
     }
     tasks.push(new createTask(text , textTitle , type , timeStart))
     localStorage.setItem("tasks",JSON.stringify(tasks));
